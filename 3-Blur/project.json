@@ -1,0 +1,980 @@
+{
+    "name": "3-Blur",
+    "components": [
+        {
+            "name": "/App",
+            "graph": {
+                "connections": [],
+                "roots": [
+                    {
+                        "id": "eacc74e7-4dce-2baf-354b-8070e2b2b872",
+                        "type": "Group",
+                        "label": "App Root",
+                        "x": 177,
+                        "y": 141.5,
+                        "parameters": {
+                            "backgroundColor": "#FFFFFF"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "572e7634-41ff-a9a5-14c4-341abf9fd483",
+                                "type": "Page Stack",
+                                "x": 239.5,
+                                "y": 168,
+                                "parameters": {
+                                    "pages": [
+                                        {
+                                            "id": "5dh3",
+                                            "label": "Springboard"
+                                        }
+                                    ],
+                                    "pageComp-5dh3": "/Springboard Page"
+                                },
+                                "ports": [],
+                                "dynamicports": [
+                                    {
+                                        "name": "pageComp-5dh3",
+                                        "displayName": "Component",
+                                        "editorName": "Springboard | Component",
+                                        "plug": "input",
+                                        "type": "component",
+                                        "parent": "pages",
+                                        "parentItemId": "5dh3",
+                                        "index": 19
+                                    },
+                                    {
+                                        "plug": "input",
+                                        "type": {
+                                            "name": "enum",
+                                            "enums": [
+                                                {
+                                                    "label": "Springboard",
+                                                    "value": "5dh3"
+                                                }
+                                            ],
+                                            "allowEditOnly": true
+                                        },
+                                        "group": "General",
+                                        "displayName": "Start Page",
+                                        "name": "startPage",
+                                        "default": "5dh3",
+                                        "index": 20
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasSize": {
+                    "width": "375px",
+                    "height": "667px"
+                },
+                "canvasPos": {
+                    "x": -306.8342655684606,
+                    "y": -1.1574902046014812
+                }
+            }
+        },
+        {
+            "name": "/Springboard Page",
+            "id": "2a9790e1-c549-f92a-4667-8394edf7663f",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "d763f669-7408-2483-3ea3-7122022a866a",
+                        "fromProperty": "Size",
+                        "toId": "65be54ec-42de-bd29-c5e6-f38fb5a987ed",
+                        "toProperty": "transformScale"
+                    },
+                    {
+                        "fromId": "d763f669-7408-2483-3ea3-7122022a866a",
+                        "fromProperty": "xPos",
+                        "toId": "bda63343-e162-2e18-8a00-94a74c78482d",
+                        "toProperty": "transformX"
+                    },
+                    {
+                        "fromId": "602079ae-206c-4c84-d51c-6795b7bd0a29",
+                        "fromProperty": "pointerDown",
+                        "toId": "d763f669-7408-2483-3ea3-7122022a866a",
+                        "toProperty": "to-DragActive"
+                    },
+                    {
+                        "fromId": "602079ae-206c-4c84-d51c-6795b7bd0a29",
+                        "fromProperty": "pointerUp",
+                        "toId": "d763f669-7408-2483-3ea3-7122022a866a",
+                        "toProperty": "to-Default"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "825da893-651a-9ae2-010e-611f24012658",
+                        "type": "Group",
+                        "label": "Container",
+                        "x": -259,
+                        "y": -104,
+                        "parameters": {
+                            "backgroundColor": "#000000",
+                            "paddingLeft": {
+                                "value": 0,
+                                "unit": "px"
+                            },
+                            "flexDirection": "none"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "602079ae-206c-4c84-d51c-6795b7bd0a29",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 59,
+                                "parameters": {},
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "65be54ec-42de-bd29-c5e6-f38fb5a987ed",
+                                        "type": "Group",
+                                        "label": "AppIcons",
+                                        "x": 20,
+                                        "y": 102,
+                                        "parameters": {
+                                            "flexWrap": "wrap",
+                                            "flexDirection": "row",
+                                            "paddingLeft": {
+                                                "value": 16,
+                                                "unit": "px"
+                                            },
+                                            "paddingTop": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            },
+                                            "paddingRight": {
+                                                "value": 16,
+                                                "unit": "px"
+                                            },
+                                            "paddingBottom": {
+                                                "value": 44,
+                                                "unit": "px"
+                                            },
+                                            "sizeMode": "explicit"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": [
+                                            {
+                                                "id": "de77e135-6004-54f7-aa04-1a879d128f07",
+                                                "type": "/App Icon",
+                                                "label": "App Icon",
+                                                "x": 20,
+                                                "y": 95,
+                                                "parameters": {
+                                                    "m-l": {
+                                                        "value": 0,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-b": {
+                                                        "value": 4,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-r": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "6e5e87f2-2bce-d1db-f816-e291f327b31f",
+                                                "type": "/App Icon",
+                                                "label": "App Icon",
+                                                "x": 20,
+                                                "y": 141,
+                                                "parameters": {
+                                                    "m-l": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-b": {
+                                                        "value": 4,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-r": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "76684d1c-5ae5-1c88-164c-1e444f75e923",
+                                                "type": "/App Icon",
+                                                "label": "App Icon",
+                                                "x": 20,
+                                                "y": 187,
+                                                "parameters": {
+                                                    "m-l": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-b": {
+                                                        "value": 4,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-r": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "5b3ea3ec-b54d-88da-def3-848e808eca88",
+                                                "type": "/App Icon",
+                                                "label": "App Icon",
+                                                "x": 20,
+                                                "y": 233,
+                                                "parameters": {
+                                                    "m-l": {
+                                                        "value": 10,
+                                                        "unit": "px"
+                                                    },
+                                                    "m-b": {
+                                                        "value": 4,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "bda63343-e162-2e18-8a00-94a74c78482d",
+                                "type": "Group",
+                                "label": "SliderLeft",
+                                "x": 20,
+                                "y": 440,
+                                "parameters": {
+                                    "transformX": {
+                                        "value": -400,
+                                        "unit": "px"
+                                    },
+                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    filter: blur(1.5rem);\n}",
+                                    "styleType": "css",
+                                    "styleCss": "/* background-color: red; */\n",
+                                    "cssClassName": "",
+                                    "flexDirection": "none",
+                                    "boxShadowEnabled": true,
+                                    "boxShadowInset": false,
+                                    "boxShadowColor": "#000000",
+                                    "boxShadowOffsetX": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "boxShadowBlurRadius": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "boxShadowSpreadRadius": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "boxShadowOffsetY": {
+                                        "value": 0,
+                                        "unit": "px"
+                                    },
+                                    "visible": true,
+                                    "backgroundColor": "#000000",
+                                    "blockTouch": false,
+                                    "pointerEventsMode": "inherit"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "bb719bbc-ac46-c481-ef20-dc9ebe109139",
+                                        "type": "Group",
+                                        "label": "Bg",
+                                        "x": 20,
+                                        "y": 95,
+                                        "parameters": {
+                                            "flexDirection": "none",
+                                            "backgroundColor": "#000000",
+                                            "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\nfilter: blur(1.5rem);",
+                                            "styleType": "css",
+                                            "styleCss": "/* background-color: red; */\n",
+                                            "opacity": 0.4
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "566a3793-24e6-b671-f945-121728f0a514",
+                                        "type": "Group",
+                                        "label": "Canvas-App-Icons",
+                                        "x": 20,
+                                        "y": 118,
+                                        "parameters": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "wrap",
+                                            "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n",
+                                            "paddingLeft": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            },
+                                            "paddingTop": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            },
+                                            "paddingRight": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            },
+                                            "paddingBottom": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": [
+                                            {
+                                                "id": "dff93971-47a4-38de-5602-660ee5ecc0e8",
+                                                "type": "Group",
+                                                "label": "Big-App-Icon",
+                                                "x": 20,
+                                                "y": 59,
+                                                "parameters": {
+                                                    "backgroundColor": "#1900FF",
+                                                    "width": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "height": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "borderRadius": {
+                                                        "value": 25,
+                                                        "unit": "px"
+                                                    },
+                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n",
+                                                    "flexDirection": "none",
+                                                    "marginRight": {
+                                                        "value": 24,
+                                                        "unit": "px"
+                                                    },
+                                                    "marginBottom": {
+                                                        "value": 24,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "196368f2-3028-322b-23da-5439e137132a",
+                                                "type": "Group",
+                                                "label": "Big-App-Icon",
+                                                "x": 20,
+                                                "y": 118,
+                                                "parameters": {
+                                                    "backgroundColor": "#1900FF",
+                                                    "width": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "height": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "borderRadius": {
+                                                        "value": 25,
+                                                        "unit": "px"
+                                                    },
+                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n",
+                                                    "marginBottom": {
+                                                        "value": 24,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "c3552570-a37e-2aca-83d0-f29736ea3cdc",
+                                                "type": "Group",
+                                                "label": "Big-App-Icon",
+                                                "x": 20,
+                                                "y": 177,
+                                                "parameters": {
+                                                    "backgroundColor": "#1900FF",
+                                                    "width": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "height": {
+                                                        "value": 144,
+                                                        "unit": "px"
+                                                    },
+                                                    "borderRadius": {
+                                                        "value": 25,
+                                                        "unit": "px"
+                                                    },
+                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n"
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "d763f669-7408-2483-3ea3-7122022a866a",
+                        "type": "States",
+                        "x": 145.41819901073316,
+                        "y": 48.03922908837683,
+                        "parameters": {
+                            "states": "Default,DragActive",
+                            "values": "Size,xPos",
+                            "currentState": "Default",
+                            "value-Default-Size": 1,
+                            "value-Default-xPos": -480,
+                            "value-DragActive-Size": 0.99,
+                            "value-DragActive-xPos": 0,
+                            "transition-DragActive-xPos": {
+                                "curve": [
+                                    0.86,
+                                    0.03,
+                                    0.15,
+                                    1.01
+                                ],
+                                "dur": 600,
+                                "delay": 0
+                            }
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Size",
+                                "index": 5
+                            },
+                            {
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "label": "Number",
+                                            "value": "number"
+                                        },
+                                        {
+                                            "label": "String",
+                                            "value": "string"
+                                        },
+                                        {
+                                            "label": "Boolean",
+                                            "value": "boolean"
+                                        },
+                                        {
+                                            "label": "Color",
+                                            "value": "color"
+                                        },
+                                        {
+                                            "label": "Text Style",
+                                            "value": "textStyle"
+                                        }
+                                    ],
+                                    "allowEditOnly": true
+                                },
+                                "default": "number",
+                                "plug": "input",
+                                "group": "Types",
+                                "displayName": "Size",
+                                "name": "type-Size",
+                                "index": 6
+                            },
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "xPos",
+                                "index": 7
+                            },
+                            {
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "label": "Number",
+                                            "value": "number"
+                                        },
+                                        {
+                                            "label": "String",
+                                            "value": "string"
+                                        },
+                                        {
+                                            "label": "Boolean",
+                                            "value": "boolean"
+                                        },
+                                        {
+                                            "label": "Color",
+                                            "value": "color"
+                                        },
+                                        {
+                                            "label": "Text Style",
+                                            "value": "textStyle"
+                                        }
+                                    ],
+                                    "allowEditOnly": true
+                                },
+                                "default": "number",
+                                "plug": "input",
+                                "group": "Types",
+                                "displayName": "xPos",
+                                "name": "type-xPos",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Default Values",
+                                "name": "value-Default-Size",
+                                "displayName": "Size",
+                                "editorName": "Default|Size",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Default Values",
+                                "name": "value-Default-xPos",
+                                "displayName": "xPos",
+                                "editorName": "Default|xPos",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": "curve",
+                                "displayName": "Default",
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "Default Transitions",
+                                "name": "transitiondef-Default",
+                                "index": 11
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "curve"
+                                },
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "Default Transitions",
+                                "name": "transition-Default-Size",
+                                "displayName": "Size",
+                                "editorName": "Transition Default|Size",
+                                "index": 12
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "curve"
+                                },
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "Default Transitions",
+                                "name": "transition-Default-xPos",
+                                "displayName": "xPos",
+                                "editorName": "Transition Default|xPos",
+                                "index": 13
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Default",
+                                "name": "to-Default",
+                                "group": "Go to state",
+                                "index": 14
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Default",
+                                "name": "at-Default",
+                                "group": "Current state",
+                                "index": 15
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Default",
+                                "name": "reached-Default",
+                                "group": "Current state",
+                                "index": 16
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "DragActive Values",
+                                "name": "value-DragActive-Size",
+                                "displayName": "Size",
+                                "editorName": "DragActive|Size",
+                                "index": 17
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "DragActive Values",
+                                "name": "value-DragActive-xPos",
+                                "displayName": "xPos",
+                                "editorName": "DragActive|xPos",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": "curve",
+                                "displayName": "Default",
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "DragActive Transitions",
+                                "name": "transitiondef-DragActive",
+                                "index": 19
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "curve"
+                                },
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "DragActive Transitions",
+                                "name": "transition-DragActive-Size",
+                                "displayName": "Size",
+                                "editorName": "Transition DragActive|Size",
+                                "index": 20
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "curve"
+                                },
+                                "default": {
+                                    "curve": [
+                                        0,
+                                        0,
+                                        0.58,
+                                        1
+                                    ],
+                                    "dur": 300,
+                                    "delay": 0
+                                },
+                                "group": "DragActive Transitions",
+                                "name": "transition-DragActive-xPos",
+                                "displayName": "xPos",
+                                "editorName": "Transition DragActive|xPos",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To DragActive",
+                                "name": "to-DragActive",
+                                "group": "Go to state",
+                                "index": 22
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At DragActive",
+                                "name": "at-DragActive",
+                                "group": "Current state",
+                                "index": 23
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached DragActive",
+                                "name": "reached-DragActive",
+                                "group": "Current state",
+                                "index": 24
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Default",
+                                        "DragActive"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "State",
+                                "name": "currentState",
+                                "default": "Default",
+                                "index": 25
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "4b4adb52-8351-2555-f272-3b1ed4236c14",
+                        "type": "Animation",
+                        "x": 107.92742819285581,
+                        "y": -2.8482143646298255,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasPos": {
+                    "x": 136.75510293989132,
+                    "y": -1.9539840004873237
+                },
+                "canvasSize": {
+                    "width": "375px",
+                    "height": "651px"
+                }
+            }
+        },
+        {
+            "name": "/App Icon",
+            "id": "9c8c6a11-6b55-0812-c947-5b6bff79ccf8",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "44083f4f-00db-ddab-ec0b-e2995c88bba6",
+                        "fromProperty": "m-l",
+                        "toId": "689b2c40-65c8-ae7b-a72c-506c73b7bca8",
+                        "toProperty": "marginLeft"
+                    },
+                    {
+                        "fromId": "44083f4f-00db-ddab-ec0b-e2995c88bba6",
+                        "fromProperty": "m-r",
+                        "toId": "689b2c40-65c8-ae7b-a72c-506c73b7bca8",
+                        "toProperty": "marginRight"
+                    },
+                    {
+                        "fromId": "44083f4f-00db-ddab-ec0b-e2995c88bba6",
+                        "fromProperty": "m-t",
+                        "toId": "689b2c40-65c8-ae7b-a72c-506c73b7bca8",
+                        "toProperty": "marginTop"
+                    },
+                    {
+                        "fromId": "44083f4f-00db-ddab-ec0b-e2995c88bba6",
+                        "fromProperty": "m-b",
+                        "toId": "689b2c40-65c8-ae7b-a72c-506c73b7bca8",
+                        "toProperty": "marginBottom"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "689b2c40-65c8-ae7b-a72c-506c73b7bca8",
+                        "type": "Group",
+                        "label": "App Icon",
+                        "x": 215.36063473521173,
+                        "y": -43.749861697319545,
+                        "parameters": {
+                            "clip": true,
+                            "flexDirection": "column",
+                            "sizeMode": "contentSize",
+                            "alignX": "center"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "3e51e5f6-591b-9ec5-c495-5707a691c293",
+                                "type": "Group",
+                                "label": "position",
+                                "x": 20,
+                                "y": 155,
+                                "parameters": {
+                                    "sizeMode": "explicit",
+                                    "flexDirection": "none",
+                                    "backgroundColor": "#0021FF",
+                                    "borderRadius": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "width": {
+                                        "value": 72,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 72,
+                                        "unit": "px"
+                                    },
+                                    "marginBottom": {
+                                        "value": 10,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "0cd0e0ae-6f85-1246-dc78-ff48bebf6946",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 214,
+                                "parameters": {
+                                    "textAlignX": "center",
+                                    "color": "#FFFFFF",
+                                    "fontSize": {
+                                        "value": 9,
+                                        "unit": "px"
+                                    },
+                                    "text": "App Name",
+                                    "fontFamily": "Tahoma"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "44083f4f-00db-ddab-ec0b-e2995c88bba6",
+                        "type": "Component Inputs",
+                        "x": -95.63825884334452,
+                        "y": 82.39357742521577,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "m-l",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            },
+                            {
+                                "name": "m-r",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            },
+                            {
+                                "name": "m-t",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 3
+                            },
+                            {
+                                "name": "m-b",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 4
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasPos": {
+                    "x": 1448.8728513453966,
+                    "y": 30.207947165340656
+                },
+                "canvasSize": {
+                    "width": "83px",
+                    "height": "93px"
+                }
+            }
+        }
+    ],
+    "settings": {},
+    "rootNodeId": "eacc74e7-4dce-2baf-354b-8070e2b2b872",
+    "version": "1",
+    "metadata": {
+        "dbCollections": []
+    }
+}
