@@ -9,3 +9,9 @@ title: Noodl Experiments
 description: Noodl Expirments for 2020
 baseurl: "/Noodl-Experiments" # the subpath of your site, e.g. /blog
 url: "https://markgrahamdunn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+<ul>
+{% for page in site.collections.legal.docs %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
